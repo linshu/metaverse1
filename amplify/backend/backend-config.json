@@ -16,6 +16,22 @@
     }
   },
   "function": {
+    "metaversebaseTrigger1f5eb67f": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn",
+            "StreamArn"
+          ],
+          "category": "storage",
+          "resourceName": "metaversebase"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
     "metaversefunc": {
       "build": true,
       "dependsOn": [],
@@ -24,6 +40,22 @@
     }
   },
   "parameters": {
+    "AMPLIFY_function_metaversebaseTrigger1f5eb67f_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "metaversebaseTrigger1f5eb67f"
+        }
+      ]
+    },
+    "AMPLIFY_function_metaversebaseTrigger1f5eb67f_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "metaversebaseTrigger1f5eb67f"
+        }
+      ]
+    },
     "AMPLIFY_function_metaversefunc_deploymentBucketName": {
       "usedBy": [
         {
@@ -39,6 +71,12 @@
           "resourceName": "metaversefunc"
         }
       ]
+    }
+  },
+  "storage": {
+    "metaversebase": {
+      "providerPlugin": "awscloudformation",
+      "service": "DynamoDB"
     }
   }
 }

@@ -1,0 +1,28 @@
+{
+  "resourceName": "metaversebase",
+  "tableName": "tenant",
+  "partitionKey": {
+    "fieldName": "tenant_industry",
+    "fieldType": "string"
+  },
+  "sortKey": {
+    "fieldName": "tenantid",
+    "fieldType": "number"
+  },
+  "gsi": [
+    {
+      "name": "parent_tenant",
+      "partitionKey": {
+        "fieldName": "parent_tid",
+        "fieldType": "number"
+      },
+      "sortKey": {
+        "fieldName": "tenantid",
+        "fieldType": "number"
+      }
+    }
+  ],
+  "triggerFunctions": [
+    "metaversebaseTrigger1f5eb67f"
+  ]
+}
