@@ -1,1 +1,44 @@
-{}
+{
+  "api": {
+    "metaverseapi": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "metaversefunc"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "function": {
+    "metaversefunc": {
+      "build": true,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_metaversefunc_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "metaversefunc"
+        }
+      ]
+    },
+    "AMPLIFY_function_metaversefunc_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "metaversefunc"
+        }
+      ]
+    }
+  }
+}

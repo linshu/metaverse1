@@ -10,6 +10,17 @@
       "StackName": "amplify-amplify52aee38a75614-staging-181919",
       "StackId": "arn:aws:cloudformation:us-east-2:724401827641:stack/amplify-amplify52aee38a75614-staging-181919/0e504bc0-5262-11ee-ac77-0a9c3a2e2e85",
       "AmplifyAppId": "d2p4pkwaifzxmx"
+    },
+    "categories": {
+      "function": {
+        "metaversefunc": {
+          "deploymentBucketName": "amplify-amplify52aee38a75614-staging-181919-deployment",
+          "s3Key": "amplify-builds/metaversefunc-3377786430656c52777a-build.zip"
+        }
+      },
+      "api": {
+        "metaverseapi": {}
+      }
     }
   }
 }
