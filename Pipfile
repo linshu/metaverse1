@@ -4,8 +4,12 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+aws-wsgi = "*"
+boto3 = "*"
+flask = "*"
+flask-cors = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.11"
+python_version = "3.8"
