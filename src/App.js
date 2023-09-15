@@ -2,6 +2,15 @@ import logo from './logo.svg';
 import './App.css';
 import "@aws-amplify/ui-react/styles.css";
 import { API } from "aws-amplify";
+import {
+  Button,
+  Flex,
+  Heading,
+  Text,
+  TextField,
+  View,
+  withAuthenticator,
+} from "@aws-amplify/ui-react";
 
 function App() {
   async function fetchItems() {
@@ -15,6 +24,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
+          <button onClick={fetchItems}>Show</button>
         </p>
         <a
           className="App-link"
