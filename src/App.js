@@ -1,7 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import "@aws-amplify/ui-react/styles.css";
+import { API } from "aws-amplify";
 
 function App() {
+  async function fetchItems() {
+    const data = await API.get('metaverseapi', '/items')
+    console.log(data)
+  }
+
   return (
     <div className="App">
       <header className="App-header">
