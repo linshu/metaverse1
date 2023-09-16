@@ -15,7 +15,7 @@
       "function": {
         "metaversefunc": {
           "deploymentBucketName": "amplify-amplify52aee38a75614-staging-181919-deployment",
-          "s3Key": "amplify-builds/metaversefunc-4c6a6762523847307050-build.zip"
+          "s3Key": "amplify-builds/metaversefunc-42744b6c4f4746306932-build.zip"
         },
         "metaversebaseTrigger1f5eb67f": {
           "deploymentBucketName": "amplify-amplify52aee38a75614-staging-181919-deployment",

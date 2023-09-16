@@ -1,5 +1,9 @@
 {
     "httpMethod": "GET",
-    "path": "/items",
-    "queryStringParameters": ""
+    "path": "items",
+    "queryStringParameters":
+        {
+            "tenantid": "3",
+            "tenant_industry": "telecommunication"
+        }
 }

@@ -9,19 +9,7 @@
     "fieldName": "tenantid",
     "fieldType": "number"
   },
-  "gsi": [
-    {
-      "name": "parent_tenant",
-      "partitionKey": {
-        "fieldName": "parent_tid",
-        "fieldType": "number"
-      },
-      "sortKey": {
-        "fieldName": "tenantid",
-        "fieldType": "number"
-      }
-    }
-  ],
+  "gsi": [],
   "triggerFunctions": [
     "metaversebaseTrigger1f5eb67f"
   ]
